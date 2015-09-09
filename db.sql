@@ -1,0 +1,7 @@
+CREATE TABLE `dashboard_documents` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `user_id` int(8) DEFAULT NULL,
+  `cms_url` varchar(256) DEFAULT NULL,
+  `datetime_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1
