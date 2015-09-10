@@ -12,10 +12,10 @@ import java.util.Date;
  */
 public class DashBoardDocuments {
 
-    int id;
-    String cmsUrl;
-    int userID;
-    Date dateTime;
+    public int id;
+    public String cmsUrl;
+    public int userID;
+    public Date dateTime;
 
     public Date getDateTime() {
         return dateTime;

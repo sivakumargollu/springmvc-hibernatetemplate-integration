@@ -30,7 +30,14 @@
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/jsp/"
-          p:suffix=".jsp" />
+          p:suffix=".jsp" >
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+        <property name="exposedContextBeanNames">
+            <list>
+                <value>dashBoardDocumentsList</value>
+            </list>
+        </property>
+    </bean>
 
     <bean id="paramMultiController" name="paramMultiController"
           class="org.springframework.web.servlet.mvc.multiaction.MultiActionController">
@@ -44,6 +51,7 @@
             <bean class="learning.springmvc.controllers.MultiActionControllerActions"/>
         </property>
     </bean>
+
     <bean id="propsMultiController" name="propsMultiController"
           class="org.springframework.web.servlet.mvc.multiaction.MultiActionController">
         <property name="methodNameResolver">

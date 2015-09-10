@@ -31,6 +31,6 @@ public class MultiActionControllerActions {
         System.out.println("Debug stmt @ into dashboard lander");
         SpringHibernateUtils hibernateUtils = new SpringHibernateUtils();
         List list = hibernateUtils.getDashBoardDocuments(req);
-        return new ModelAndView("dashboard", "", list);
+        return new ModelAndView("dashboard", "dashBoardDocumentsList", list);
     }
 }
