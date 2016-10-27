@@ -2,3 +2,6 @@
 .tmp
 .eclipse
 .sw*
+build.xml
+/build
+build
